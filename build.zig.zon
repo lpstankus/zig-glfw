@@ -1,0 +1,72 @@
+.{
+    .name = "glfw",
+    .version = "3.4.0",
+    .paths = .{
+        "src/",
+        "include/",
+        "deps/",
+        "docs/",
+        "build.zig",
+        "build.zig.zon",
+        "README.md",
+        "LICENSE.md",
+        "CONTRIBUTORS.md",
+    },
+    .dependencies = .{
+        .wayland_headers = .{
+            .url = "https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.23.1/wayland-1.23.1.tar.gz",
+            .hash = "1220b62de1974a154da15d285955bd4f6f77255ce6c74918e4a55a9f7f8206266afa",
+            .lazy = true,
+        },
+        .xkbcommon = .{
+            .url = "https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz",
+            .hash = "1220123146d8046e49e4d3791d6cb17be83b8e2beb55b74a80e2f964f82a20dd771c",
+            .lazy = true,
+        },
+        .libX11 = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libx11/-/archive/libX11-1.8.10/libx11-libX11-1.8.10.tar.gz",
+            .hash = "1220e645e0edefbdf79701c44a667310b605d75475b773259f975bd43febb5115ee3",
+            .lazy = true,
+        },
+        .xorgproto = .{
+            .url = "https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/archive/xorgproto-2024.1/xorgproto-xorgproto-2024.1.tar.gz",
+            .hash = "12208ed1123d0a60b3f4607eafad3831c821ba8daba7b068b5e34fe3ccd3a356a22f",
+            .lazy = true,
+        },
+        .xrandr = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxrandr/-/archive/libXrandr-1.5.4/libxrandr-libXrandr-1.5.4.tar.gz",
+            .hash = "122028269dbd7cb94b7e9ba77db3b9ffb161cc6e4e1a0bb4e45f8f1fcb82c81501af",
+            .lazy = true,
+        },
+        .xrender = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxrender/-/archive/libXrender-0.9.11/libxrender-libXrender-0.9.11.tar.gz",
+            .hash = "1220eadc8ac4a5b5b0d6ca6b038b5e94c57f99f5644b9ee372a26a0b48a2b2d59c13",
+            .lazy = true,
+        },
+        .xinerama = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxinerama/-/archive/libXinerama-1.1.5/libxinerama-libXinerama-1.1.5.tar.gz",
+            .hash = "1220dc3e7f86c7206d9d6c12dd22ad6b6203df73f20cfe3ed4af3c4ff024b1e53e80",
+            .lazy = true,
+        },
+        .xi = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxi/-/archive/libXi-1.8.2/libxi-libXi-1.8.2.tar.gz",
+            .hash = "122049b776d4013879495abe4fa408f8db3dbf6a5249cbc6fdcc07b678824594f52b",
+            .lazy = true,
+        },
+        .xext = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxext/-/archive/libXext-1.3.6/libxext-libXext-1.3.6.tar.gz",
+            .hash = "1220870aa8a7f329bef92ab52639201a49d40c318005c7ce0f903198aa20bf450f1e",
+            .lazy = true,
+        },
+        .xfixes = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxfixes/-/archive/libXfixes-6.0.1/libxfixes-libXfixes-6.0.1.tar.gz",
+            .hash = "12200d4f723e781100b2384e8d4a33310adb0c0a122fc15ccd1c1084ea60baafbdd8",
+            .lazy = true,
+        },
+        .xcursor = .{
+            .url = "https://gitlab.freedesktop.org/xorg/lib/libxcursor/-/archive/libXcursor-1.2.3/libxcursor-libXcursor-1.2.3.tar.gz",
+            .hash = "122000ab092c85e6640926a31043e98b65e2bcd7adfbfde1672cf693406253e3c3b5",
+            .lazy = true,
+        },
+    },
+}

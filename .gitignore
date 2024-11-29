@@ -2,6 +2,10 @@
 build
 build-*
 
+# Zig build system clutter and output
+.zig-cache
+zig-out
+
 # Visual Studio clutter
 _ReSharper*
 *.sdf
